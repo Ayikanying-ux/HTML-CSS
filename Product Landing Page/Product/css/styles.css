@@ -1,0 +1,147 @@
+*{
+	box-sizing: border-box;
+}
+body{
+font: sans-serif, Arial, Helvatica 18px;
+padding: 0;
+margin: 0;
+}
+li{
+	list-style-type: none;
+	text-align: center;
+}
+button{
+	display: flex;
+	margin: auto;
+	background-color: yellow;
+
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.container{
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+	height: auto;
+}
+#head{
+	background-color: #000;
+	color: #fff;
+}
+#head{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding: 20px;
+	justify-content: space-between;
+	padding-bottom: 0px;
+	
+
+}
+
+#head ul{
+	display: flex;
+}
+#head ul li{
+	list-style-type: none;
+	margin-left: 10px;
+}
+.head{
+	text-align: center;
+}
+.form{
+	text-align: center;
+}
+.form button{
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+
+}
+.services{
+	margin-top: 90px;
+}
+.services h1, p{
+	width: 80%;
+	margin: auto;
+	}
+.services p{
+	font-size: 20px;
+	font-weight: lighter;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.video{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 20px 
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	width: 85%;
+	margin: auto;
+	
+}
+.grid-container .grid{
+	border: 2px #000 solid;
+	height: 250px;
+	flex-wrap: wrap;
+}
+.grid h4{
+	text-align: center;
+}
+.grid p{
+	text-align: center;
+}
+.main-footer{
+	display: flex;
+	text-align: right;
+	display: block;
+	width: 85%;
+	background-color: lightgrey;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	
+}
+.main-footer p{
+	margin-right: 0px;
+}
+.main-footer a, p{
+	padding-right: 10px;
+}
+@media(max-width: 650px) {
+	#head ul{
+		display: block;
+		margin-right: 90px;
+	}
+}
+@media(max-width: 600px){
+	#head{
+		display: block;
+	
+	}
+	#head h1{
+		text-align: center;
+	}
+}
+@media(max-width: 550px) {
+	.services h1, p{
+		text-align: center;
+		margin-bottom: 0px;
+}
+@media(max-width: 797px) {
+	.grid-container{
+		grid-template-columns: 1fr;
+	}
+	.grid-container .grid{
+		width: 50%;
+		margin: auto;
+	}
+}
